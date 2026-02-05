@@ -14,15 +14,14 @@ This repo contains various Python scripts organized by topic and functionality:
 - `LambdaFunction.py` — Lambda functions
 - `list*.py` — List operations
 - `string*.py` — String handling and palindrome check
-- Many small programs covering built-in functions, loops, and Python basics :contentReference[oaicite:2]{index=2}
+- Many small programs covering built-in functions, loops, and Python basics 
 
 ### 📂 Subdirectories
 
 #### 📷 `Image/`
-Contains image processing examples (e.g., using `skimage`, etc.). :contentReference[oaicite:3]{index=3}
+Contains image processing examples (e.g., using `skimage`, etc.).
 
 #### 🐍 `PYQ/`
-Previous year questions for practice. :contentReference[oaicite:4]{index=4}
-
+Previous year questions for practice.
 #### 🐢 `Turtle/`
-Examples involving the `turtle` graphics module. :contentReference[oaicite:5]{index=5}
+Examples involving the `turtle` graphics module.
