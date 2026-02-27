@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 def check_fields():
     name = entry_name.get().strip()
@@ -9,6 +10,14 @@ def check_fields():
         submit_button.pack(pady=10)
     else:
         submit_button.pack_forget()
+
+def login():
+    name = entry_name.get().strip()
+    sid = entry_id.get().strip()
+    pwd = entry_password.get().strip()
+
+    # You can add real validation here if needed
+    messagebox.showinfo("Login Status", f"Login Successful!\nWelcome {name}")
 
 if __name__ == "__main__":
     root = tk.Tk()
@@ -27,12 +36,12 @@ if __name__ == "__main__":
     entry_password = tk.Entry(root, show="*")
     entry_password.pack()
 
-    submit_button = tk.Button(root, text="Submit")
-    submit_button.pack_forget()  
+    submit_button = tk.Button(root, text="Submit", command=login)
+    submit_button.pack_forget()
 
     # Bind key events
     entry_name.bind("<KeyRelease>", lambda e: check_fields())
     entry_id.bind("<KeyRelease>", lambda e: check_fields())
     entry_password.bind("<KeyRelease>", lambda e: check_fields())
 
-    root.mainloop() 
+    root.mainloop()
