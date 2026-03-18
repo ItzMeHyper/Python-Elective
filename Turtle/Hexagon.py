@@ -4,6 +4,7 @@ hex = turtle.Turtle()
 hex.speed(5)
 
 hex.pencolor("black")
+hex.pensize(3)
 hex.fillcolor("red")
 hex.begin_fill()
 
