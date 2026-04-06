@@ -1,0 +1,11 @@
+import tkinter as tk
+window = tk.Tk()
+window.geometry("400x250")
+name = tk.Label(window, text = "Student Name:").place(x = 30, y = 50)
+email = tk.Label(window, text = "Student ID:").place(x = 30, y = 90)
+password =  tk.Label(window, text = "Password:").place(x = 30, y = 130)
+sbmitbtn = tk.Button(window, text = "Submit", activebackground = "green", activeforeground = "blue").place(x = 120, y = 170)
+entry1 = tk.Entry(window).place(x = 115, y = 50)
+entry2 = tk.Entry(window).place(x = 115, y = 90)
+entry3 = tk.Entry(window).place(x = 115, y = 130)
+window.mainloop()
