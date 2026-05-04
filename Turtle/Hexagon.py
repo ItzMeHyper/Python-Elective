@@ -3,6 +3,8 @@ import turtle
 hex = turtle.Turtle()
 hex.speed(5)
 
+turtle.title("Hexagon")
+
 hex.pencolor("black")
 hex.pensize(3)
 hex.fillcolor("red")

@@ -1,11 +1,23 @@
 import cv2
 
-image = cv2.imread("iron_man.jpg")
+img = cv2.imread("iron_man.jpg")
 
-gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow('Original Image', image)
+cv2.imshow('Original Image', img)
 cv2.imshow('Grayscale Image', gray_image)
+
+#Resize
+resized = cv2.resize(img, (300, 300))
+cv2.imshow('Resized Image', resized)
+
+#Blur
+blur = cv2.GaussianBlur(img, (5,5), 0)
+cv2.imshow('Blurred Image', blur)
+
+#Edge Detection
+edges = cv2.Canny(img, 100, 200)
+cv2.imshow('Edge Detected Image', edges)
 
 cv2.waitKey(0)
 
