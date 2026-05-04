@@ -11,8 +11,12 @@ cv2.imshow('Grayscale Image', gray_image)
 resized = cv2.resize(img, (300, 300))
 cv2.imshow('Resized Image', resized)
 
+#Rotate
+rotated = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
+cv2.imshow('Rotated Image', rotated)
+
 #Blur
-blur = cv2.GaussianBlur(img, (5,5), 0)
+blur = cv2.GaussianBlur(img, (21,21), 0)
 cv2.imshow('Blurred Image', blur)
 
 #Edge Detection

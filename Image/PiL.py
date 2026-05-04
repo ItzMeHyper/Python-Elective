@@ -18,3 +18,8 @@ rotated.show()
 #Crop
 cropped = img.crop((50, 50, 200, 200))
 cropped.show()
+
+#Blur
+from PIL import ImageFilter
+blurred = img.filter(ImageFilter.BLUR)
+blurred.show()
