@@ -1,3 +1,12 @@
+"""
+Enter number of rows: 5
+1
+12
+123
+1234
+12345
+"""
+
 n = int(input("Enter number of rows: "))
 
 for i in range(1, n + 1):
