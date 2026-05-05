@@ -9,6 +9,7 @@ img = Image.open("iron_man.jpg")
 photo = ImageTk.PhotoImage(img)
 
 label = Label(root, image=photo)
+Label(root, text="Iron Man").pack()
 label.pack()
 
 root.mainloop()

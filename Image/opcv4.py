@@ -12,3 +12,9 @@ def shrink_image(image, factor):
 img = cv2.imread("iron_man.jpg")
 
 small_img = shrink_image(img, 2)
+cv2.imshow("Shrunk Image", small_img)
+
+
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()

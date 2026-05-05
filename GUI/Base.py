@@ -2,7 +2,7 @@ import tkinter as tk
 
 def action():
     val = entry.get()
-    label.config(text=val)
+    label.config(text="Content: " + val)
 
 root = tk.Tk()
 
